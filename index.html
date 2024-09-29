@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lovely</title>
+</head>
+<style>
+*{
+  margin: 0;
+}
+body{
+  font-family: Arial;
+  background-color: #efefef;
+}
+
+#button{
+  background-color: white;
+  color: black;
+  font-size: 4vw;
+  border: 0;
+  outline: 0;
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+
+.button{
+  background-color: black;
+  color: white;
+  font-size: 4vw;
+  border: 0;
+  outline: 0;
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+
+.sub{
+  font-size: 2vw;
+}
+
+h2{
+  font-size: 7vw;
+}
+
+h3{
+  font-size: 5vw;
+}
+
+p{
+  font-size: 4vw;
+}
+
+ul{
+  font-size: 4vw;
+  line-height:25px;
+}
+    
+  .slider{
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+    background-image: url('5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .sl-rel{
+    color:white;
+    width: 67%;
+    margin-left: 20px;
+    margin-top: 17vh;
+  }
+  .sl-rel h1{
+      font-size: 9vw;
+    }
+    .sl-rel p{
+      font-size: 4vw;
+    }
+    .header{
+      background-color: #efefef;
+      color: black;
+      font-weight: bold;
+      top: 0;
+      position: sticky;
+    }
+    header{
+      width: 90%;
+      display: inline-flex;
+      justify-content: space-between;
+      margin: 0 5%;
+    }
+    header .logo{
+      width: 20%;
+    }
+    header .logo img{
+      width: 100%;
+    }
+    header .menu{
+      width: ;
+      text-align: right;
+      word-spacing: 40px;
+    }
+    header .menu p{
+      position: relative;
+      top: 50%;
+      display: none;
+    }
+    .menu .ham{
+      width: 50px;
+      padding: 5px;
+      position: relative;
+      top: 20%;
+    }
+    .menu .burger{
+      background-color: black;
+      width: 100%;
+      padding: 4px 0;
+      margin: 4px 0;
+    }
+    .services-con{
+      width: 100%;
+    }
+    .head{
+      text-align: center;
+      color: #454545;
+    }
+    .services{
+      width: 90%;
+      margin: 30px 5%;
+    }
+    .service{
+      width: 80%;
+      background-color: white;
+      height: max-content;
+      box-shadow: 5px 5px 10px #00000035;
+      border-radius:5px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .service img{
+      width: 20%;
+    }
+    .service p{
+      text-align: left;
+    }
+    
+    .flyer{
+      width: 100%;
+      margin: 0 0 40px 0;
+    }
+    .flyer img{
+      width: 100%;
+    }
+    
+    .testi{
+      width: 100%;
+      background-image: url('gb.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding: 40px 0;
+      overflow: hidden;
+    }
+    .clients{
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+    .client{
+      width:200%;
+      display: inline-flex;
+      justify-content: space-evenly;
+    }
+    .cli{
+      width: 50%;
+      position: relative;
+      right: 50%;
+      text-align: center;
+    }
+    .cli img{
+      width: 20%;
+      border-radius: 50%;
+    }
+    
+    .about{
+      background-image: url('gb.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      width: 100%;
+      color: white;
+      padding: 30px 0;
+    }
+    .abo{
+      width: 90%;
+      margin: 5%;
+    }
+    .ab{
+      
+    }
+    .abo img{
+      width: 70%;
+      float: none;
+      margin:10px 15%;
+    }
+    
+    footer{
+      background-color: white;
+      padding: 30px 0 0 0;
+      color: black;
+    }
+    .sides{
+      width: 90%;
+      margin: 10px 5%;
+      display: inline-flex;
+      justify-content: space-between;
+    }
+    .sidel{
+      width: 34%;
+    }
+    .sider{
+      width: 65%;
+      text-align: center;
+      background-color: black;
+      color: white;
+      padding: 20px;
+    }
+    
+    
+  @media screen and (min-width:1000px){
+    #button{
+  background-color: white;
+  color: black;
+  font-size: 1.5vw;
+  border: 0;
+  outline: 0;
+  padding: 15px 25px;
+  margin-top: 15px;
+}
+
+.button{
+  background-color: black;
+  color: white;
+  font-size: 1.5vw;
+  border: 0;
+  outline: 0;
+  padding: 15px 25px;
+  margin-top: 15px;
+}
+
+    .slider{
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+    background-image: url('5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  sl-rel{
+    color:white;
+    width: 55%;
+    margin-left: 20px;
+    margin-top: 17vh;
+  }
+    .sl-rel h1{
+      font-size: 6vw;
+    }
+    .sl-rel p{
+      font-size: 2.5vw;
+    }
+    
+    h2{
+      font-size: 4vw;
+    }
+    
+    h3{
+      font-size: 3vw;
+    }
+    
+    p{
+      font-size: 2vw;
+    }
+    
+    ul{
+      font-size: 2vw;
+      line-height: 40px;
+    }
+    
+    header .menu p{
+      position: relative;
+      top: 50%;
+      display: block;
+      font-size: 4vw;
+    }
+    .menu .ham{
+      width: 50px;
+      padding: 5px;
+      position: relative;
+      top: 20%;
+      display: none;
+    }
+    
+    .services-con{
+      width: 100%;
+    }
+    .services{
+      width: 90%;
+      margin: 30px 5%;
+      display: inline-flex;
+      justify-content: space-evenly;
+    }
+    .service{
+      width: 20%;
+      background-color: white;
+      height: max-content;
+      box-shadow: 5px 5px 10px #00000035;
+      border-radius:5px;
+      min-height: 755px;
+    }
+    
+    .abo img{
+      width: 25%;
+      float: left;
+      margin:10px;
+    }
+  }
+</style>
+<body>
+  <div class="header">
+    <header>
+      <div class="logo"><img src="logo.png"></div>
+      <div class="menu"><p>Myself Bio Contact</p>
+      <div class="ham">
+        <div class="burger"></div>
+        <div class="burger"></div>
+        <div class="burger"></div>
+      </div>
+      </div>
+    </header>
+  </div>
+  
+  <div class="slider">
+    <div class="sl-rel">
+      <h1>Gideon Ifeoluwa Oyewole</h1><br>
+      <p style="text-shadow:0px 0px 10px black;">Entreprenuer, Founder and CEO of: Lovely beauty salon, Lovely graphics & design, Lovely tech, Lovely marketing agency</p>
+    </div>
+  </div>
+  
+  <div class="services-con">
+    <br><br>
+    <div class="head">
+      <p class="sub">MY CURRENT BUSINESS</p><br>
+      <h2>Businesses</h2>
+    </div>
+    <div class="services">
+      <div class="service">
+        <img src="consulting.png"><br><br>
+        <h3>Hairdressing</h3><br>
+        <p>As a business management consultant, my focus is on optimizing operations, driving growth, and ensuring long-term sustainability for businesses.</p>
+        <button class="button">
+         <b>VISIT SITE</b>
+        </button>
+      </div>
+      <div class="service">
+        <img src="website.png"><br><br>
+        <h3>Web development</h3><br>
+        <p>Developing a professional, user-friendly, and responsive website for businesses that effectively showcases products/services, enhances brand presence, and drives customer engagement.</p>
+        <button class="button">
+         <b>VISIT SITE</b>
+        </button>
+      </div>
+      <div class="service">
+        <img src="graphic.png"><br><br>
+        <h3>Graphic design</h3><br>
+        <p>To provide professional graphic design services that enhance businesses’s brand identity, engage your target audience, and support your marketing efforts through visually compelling designs.</p>
+        <button class="button">
+         <b>VISIT SITE</b>
+        </button>
+      </div>
+      <div class="service">
+        <img src="marketing.png"><br><br>
+        <h3>Digital marketing</h3><br>
+        <p>To develop and implement a comprehensive digital marketing strategy that increases brand visibility, drives targeted traffic, and generates leads or sales for your businesses.</p>
+        <button class="button">
+         <b>VISIT SITE</b>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="about">
+    <div class="head" style="color:white;">
+      <p class="sub">MY LIFE STORY</p><br>
+      <h2>Biography</h2>
+    </div>
+    <div class="abo">
+      <img src="g1.jpg">
+      <div class="ab">
+        <br>
+        <p>Name: Gideon Ifeoluwa Oyewole <br><br> 
+        D.O.B: Feb 3rd, 1999 <br><br> 
+        Origin: Osun state, Nigeria.<br><br>
+        I was born into a divorced family (My parents were already divorced before they had intercourse again, and I am the product of that one last intercourse they had after being divorced).<br><br>
+        Though both of my parents originated from Osun state but my mom was given birth to in Abidjan...
+        </p>
+        
+        <button class="button">
+         <b>Read more</b>
+        </button>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+  
+  <br>
+  
+  <footer>
+    <div class="sides">
+      <div class="sidel">
+        <p>
+          Quick link
+        </p><br>
+        <ul>
+          <li>Myself</li>
+          <li>Bio</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="sider">
+        <h3><i>“It’s the children the world almost breaks who grow up to save it.”</i></h3>
+      </div>
+    </div><br><br>
+    <div style="text-align:center; background-color:black; color:white; padding:20px 0;">
+      <p>copy right @ 2024</p>
+    </div>
+  </footer>
+  
+</body>
+  </html>
